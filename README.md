@@ -1,3 +1,5 @@
+## 🌐 [English Version of README](README_EN.md)
+
 <!--suppress HtmlDeprecatedAttribute -->
 
 <p align="center">
