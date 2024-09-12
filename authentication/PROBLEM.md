@@ -38,6 +38,3 @@ HTTP/1.1 401 Unauthorized
 - Deve ser implementada uma forma de interceptar a requisição e validar o token antes que ela chegue ao seu controlador.
 - A implementação deve ser feita de maneira que continue funcionando corretamente após a adição de novos endpoints.
 
-## Soluções
-
-Neste [tópico](SOLUTIONS.md), você encontrará soluções para esse desafio, feitas por outros membros da comunidade.

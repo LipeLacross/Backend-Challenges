@@ -1,0 +1,12 @@
+{
+  "name": "node-loan-service",
+  "version": "1.0.0",
+  "description": "Aplicação Node.js com Express para determinar modalidades de empréstimo",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

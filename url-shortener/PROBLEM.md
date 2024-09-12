@@ -37,6 +37,3 @@ HTTP/1.1 200 OK
   URL original salva no banco de dados. Caso a URL não seja encontrada no banco, retorne o código de
   status `HTTP 404 (Not Found)`.
 
-## Soluções
-
-Neste [tópico](SOLUTIONS.md), você encontrará soluções para esse desafio, feitas por outros membros da comunidade.
