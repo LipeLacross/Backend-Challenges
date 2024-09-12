@@ -35,29 +35,135 @@ Os desafios são implementados utilizando diversas tecnologias e frameworks. Aqu
 
 Cada desafio possui sua própria estrutura de projeto. Exemplos de estrutura incluem:
 
-- **cryptography/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para implementação da criptografia.
-
 - **authentication/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para implementação da autenticação.
+    - **flask-app/**
+        - `app.py`: Implementação do serviço de autenticação em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-express-app/**
+        - `index.js`: Implementação do serviço de autenticação em Node.js com Express.
+        - `package.json`: Dependências do projeto.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-app/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `TokenController.java`: Controlador de autenticação.
+                            - `TokenValidationApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
+
+- **cryptography/**
+    - **flask-crypto/**
+        - `app.py`: Implementação do serviço de criptografia em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-express-crypto/**
+        - `crypto.js`: Implementação de criptografia em Node.js.
+        - `index.js`: Aplicação Node.js com Express.
+        - `package.json`: Dependências do projeto.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-crypto/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `CryptoUtils.java`: Utilitários de criptografia.
+                            - `ItemController.java`: Controlador de criptografia.
+                            - `SpringBootCryptoApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
 
 - **loans/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para implementação dos empréstimos.
-
-- **secure-password/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para validação de senha segura.
-
-- **url-shortener/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para encurtamento de URLs.
+    - **flask-loan-service/**
+        - `app.py`: Implementação do serviço de empréstimos em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-loan-service/**
+        - `index.js`: Implementação do serviço de empréstimos em Node.js com Express.
+        - `package.json`: Dependências do projeto.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-loan-service/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `LoanController.java`: Controlador de empréstimos.
+                            - `SpringBootLoanServiceApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
 
 - **points-of-interest/**
-    - `PROBLEM.md`: Descrição do problema e requisitos.
-    - `src/`: Código fonte para localização de pontos de interesse por GPS.
+    - **flask-poi-service/**
+        - `app.py`: Implementação do serviço de pontos de interesse em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-poi-service/**
+        - `db.json`: Banco de dados JSON para pontos de interesse.
+        - `index.js`: Implementação do serviço de pontos de interesse em Node.js com Express.
+        - `package.json`: Dependências do projeto.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-poi-service/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `Poi.java`: Modelo de ponto de interesse.
+                            - `PoiController.java`: Controlador de pontos de interesse.
+                            - `SpringBootPoiServiceApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
+
+- **secure-password/**
+    - **flask-password-service/**
+        - `app.py`: Implementação do serviço de validação de senha em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-password-service/**
+        - `index.js`: Implementação do serviço de validação de senha em Node.js com Express.
+        - `package.json`: Dependências do projeto.
+        - `validations.js`: Lógica de validação de senha.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-password-service/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `PasswordController.java`: Controlador de validação de senha.
+                            - `PasswordRequest.java`: Modelo de solicitação de senha.
+                            - `PasswordValidator.java`: Validador de senha.
+                            - `SpringBootPasswordServiceApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
+
+- **url-shortener/**
+    - **flask-url-shortener/**
+        - `app.py`: Implementação do serviço de encurtamento de URLs em Flask.
+        - `requirements.txt`: Dependências do projeto.
+    - **node-url-shortener/**
+        - `index.js`: Implementação do serviço de encurtamento de URLs em Node.js com Express.
+        - `package.json`: Dependências do projeto.
+        - `urlService.js`: Lógica de encurtamento de URLs.
+    - **PROBLEM.md**: Descrição do problema e requisitos.
+    - **spring-boot-url-shortener/**
+        - `pom.xml`: Configuração do Maven para o projeto Spring Boot.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `UrlController.java`: Controlador de encurtamento de URLs.
+                            - `UrlRequest.java`: Modelo de solicitação de URL.
+                            - `UrlService.java`: Serviço de encurtamento de URLs.
+                            - `UrlShortenerApplication.java`: Aplicação Spring Boot.
+                - **resources/**
+                    - `application.properties`: Configurações da aplicação Spring Boot.
 
 ## 🛠️ Abrir e Rodar o Projeto
 

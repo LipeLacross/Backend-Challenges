@@ -10,20 +10,20 @@ Here you will find a collection of challenges designed to enhance your programmi
 
 ## 🔨 Project Features
 
-The challenges cover a variety of topics for you to improve your skills in backend development, including:
+The challenges cover a variety of topics to help you improve your backend development skills, including:
 
-- **Cryptography**: Implementation of cryptography to protect sensitive fields in a database.
-- **Authentication**: Validation of access tokens received via HTTP.
-- **Loans**: Determination of loan types based on specific criteria.
-- **Secure Password**: Validation of passwords according to defined security criteria.
+- **Cryptography**: Implement encryption to protect sensitive fields in a database.
+- **Authentication**: Validate access tokens received via HTTP.
+- **Loans**: Determine loan modalities based on specific criteria.
+- **Secure Password**: Validate passwords according to defined security criteria.
 - **URL Shortener**: Service to shorten long URLs and redirect to the original URLs.
-- **Points of Interest by GPS**: Implementation of a service to locate nearby points of interest based on GPS coordinates.
+- **GPS Points of Interest**: Implement a service to locate nearby points of interest based on GPS coordinates.
 
-### Visual Example of the Project
+### Project Visual Example
 
-For a more detailed and visual overview of the projects, please refer to the individual directories for implementation examples.
+For a more detailed and visual overview of the projects, check the individual directories for implementation examples.
 
-## ✔️ Techniques and Technologies Used
+## ✔️ Technologies and Techniques Used
 
 The challenges are implemented using various technologies and frameworks. Here are some of the technologies used:
 
@@ -33,43 +33,149 @@ The challenges are implemented using various technologies and frameworks. Here a
 
 ## 📁 Project Structure
 
-Each challenge has its own project structure. Examples of structure include:
-
-- **cryptography/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for cryptography implementation.
+Each challenge has its own project structure. Example structures include:
 
 - **authentication/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for authentication implementation.
+    - **flask-app/**
+        - `app.py`: Flask implementation of the authentication service.
+        - `requirements.txt`: Project dependencies.
+    - **node-express-app/**
+        - `index.js`: Node.js with Express implementation of the authentication service.
+        - `package.json`: Project dependencies.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-app/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `TokenController.java`: Authentication controller.
+                            - `TokenValidationApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
+
+- **cryptography/**
+    - **flask-crypto/**
+        - `app.py`: Flask implementation of the cryptography service.
+        - `requirements.txt`: Project dependencies.
+    - **node-express-crypto/**
+        - `crypto.js`: Cryptography implementation in Node.js.
+        - `index.js`: Node.js with Express application.
+        - `package.json`: Project dependencies.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-crypto/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `CryptoUtils.java`: Cryptography utilities.
+                            - `ItemController.java`: Cryptography controller.
+                            - `SpringBootCryptoApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
 
 - **loans/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for loan implementation.
-
-- **secure-password/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for secure password validation.
-
-- **url-shortener/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for URL shortening.
+    - **flask-loan-service/**
+        - `app.py`: Flask implementation of the loan service.
+        - `requirements.txt`: Project dependencies.
+    - **node-loan-service/**
+        - `index.js`: Node.js with Express implementation of the loan service.
+        - `package.json`: Project dependencies.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-loan-service/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `LoanController.java`: Loan controller.
+                            - `SpringBootLoanServiceApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
 
 - **points-of-interest/**
-    - `PROBLEM.md`: Problem description and requirements.
-    - `src/`: Source code for locating points of interest by GPS.
+    - **flask-poi-service/**
+        - `app.py`: Flask implementation of the points of interest service.
+        - `requirements.txt`: Project dependencies.
+    - **node-poi-service/**
+        - `db.json`: JSON database for points of interest.
+        - `index.js`: Node.js with Express implementation of the points of interest service.
+        - `package.json`: Project dependencies.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-poi-service/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `Poi.java`: Point of interest model.
+                            - `PoiController.java`: Point of interest controller.
+                            - `SpringBootPoiServiceApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
 
-## 🛠️ How to Run the Project
+- **secure-password/**
+    - **flask-password-service/**
+        - `app.py`: Flask implementation of the password validation service.
+        - `requirements.txt`: Project dependencies.
+    - **node-password-service/**
+        - `index.js`: Node.js with Express implementation of the password validation service.
+        - `package.json`: Project dependencies.
+        - `validations.js`: Password validation logic.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-password-service/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `PasswordController.java`: Password validation controller.
+                            - `PasswordRequest.java`: Password request model.
+                            - `PasswordValidator.java`: Password validator.
+                            - `SpringBootPasswordServiceApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
 
-To start one of the projects locally, follow the steps below:
+- **url-shortener/**
+    - **flask-url-shortener/**
+        - `app.py`: Flask implementation of the URL shortener service.
+        - `requirements.txt`: Project dependencies.
+    - **node-url-shortener/**
+        - `index.js`: Node.js with Express implementation of the URL shortener service.
+        - `package.json`: Project dependencies.
+        - `urlService.js`: URL shortening logic.
+    - **PROBLEM.md**: Problem description and requirements.
+    - **spring-boot-url-shortener/**
+        - `pom.xml`: Maven configuration for the Spring Boot project.
+        - **src/**
+            - **main/**
+                - **java/**
+                    - **com/**
+                        - **example/**
+                            - `UrlController.java`: URL shortener controller.
+                            - `UrlRequest.java`: URL request model.
+                            - `UrlService.java`: URL shortening service.
+                            - `UrlShortenerApplication.java`: Spring Boot application.
+                - **resources/**
+                    - `application.properties`: Spring Boot application settings.
 
-1. **Ensure that the corresponding technology is installed**:
+## 🛠️ Running the Project
+
+To run one of the projects locally, follow the steps below:
+
+1. **Ensure the corresponding technology is installed**:
     - **Node.js**: [Node.js](https://nodejs.org/)
     - **Python**: [Python](https://www.python.org/)
     - **Java**: [Java JDK](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 
 2. **Clone the Repository**:
-    - Copy the repository URL and execute the following command in the terminal:
+    - Copy the repository URL and run the following command in your terminal:
 
       ```bash
       git clone <REPOSITORY_URL>
@@ -82,7 +188,7 @@ To start one of the projects locally, follow the steps below:
       npm install
       ```
 
-    - For Python, create a virtual environment and install the dependencies:
+    - For Python, create a virtual environment and install dependencies:
 
       ```bash
       python -m venv venv
@@ -103,7 +209,7 @@ To start one of the projects locally, follow the steps below:
       npm start
       ```
 
-    - For Python, execute:
+    - For Python, run:
 
       ```bash
       python app.py
@@ -115,7 +221,7 @@ To start one of the projects locally, follow the steps below:
       mvn spring-boot:run
       ```
 
-## 🌐 Deploy
+## 🌐 Deployment
 
 For information on how to deploy the projects, refer to the specific documentation for each technology or hosting platform used.
 
